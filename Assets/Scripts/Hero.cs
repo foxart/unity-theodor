@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Player : MonoBehaviour {
+public class Player1 : MonoBehaviour {
 	[SerializeField] private Transform groundCheckTransform;
 	[SerializeField] private LayerMask playerMask;
 	[SerializeField] private float velocityJump = 5;
@@ -29,10 +29,9 @@ public class Player : MonoBehaviour {
 	// FixedUpdate is called once per physics update
 	private void FixedUpdate() {
 		_rigidbody.velocity = new Vector3(_horizontalInput * velocityMovement, _rigidbody.velocity.y, 0);
-		if (Physics.OverlapSphere(groundCheckTransform.position, 0.1f, playerMask).Length == 0) {
-			// return;
-		}
-
+		// if (Physics.OverlapSphere(groundCheckTransform.position, 0.1f, playerMask).Length == 0) {
+		// return;
+		// }
 		if (!_jumpKeyPressed) {
 			return;
 		}
