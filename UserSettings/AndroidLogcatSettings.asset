@@ -1,9 +1,9 @@
 {
     "m_SelectedDeviceId": "R58R75N163F",
     "m_SelectedPackage": {
-        "deviceId": "R58R75N163F",
-        "name": "com.DefaultCompany.Mobile",
-        "processId": 27637,
+        "deviceId": "",
+        "name": "",
+        "processId": 0,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -12,13 +12,19 @@
             "deviceId": "R58R75N163F",
             "name": "com.DefaultCompany.Mobile",
             "processId": 24774,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "R58R75N163F",
             "name": "com.DefaultCompany.Mobile",
             "processId": 27637,
-            "exited": false
+            "exited": true
+        },
+        {
+            "deviceId": "R58R75N163F",
+            "name": "com.DefaultCompany.Mobile",
+            "processId": 27994,
+            "exited": true
         }
     ],
     "m_Tags": {
