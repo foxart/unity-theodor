@@ -5,7 +5,7 @@ namespace Hero {
 		private const float Gravity = -50f;
 		private const float VelocityJump = 5f;
 		[SerializeField] private LayerMask groundLayerMask;
-		[SerializeField] private float runSpeed = 1;
+		[SerializeField] private float runSpeed = 3;
 		[SerializeField] private float jumpHeight = 2f;
 		private CharacterController _characterController;
 		private float _horizontalInput;

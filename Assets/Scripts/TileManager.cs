@@ -13,7 +13,7 @@ public class TileManager : MonoBehaviour {
 	private void Start() {
 		_tileList = new List<GameObject>();
 		for (var i = 0; i < TilesToDisplay; i++) {
-			CreateTile();
+			CreateTile(0);
 		}
 	}
 
@@ -23,13 +23,13 @@ public class TileManager : MonoBehaviour {
 			return;
 		}
 
-		CreateTile();
+		CreateTile(0.5f);
 		DeleteTile();
 	}
 
-	private void CreateTile(int prefabIndex = -1) {
+	private void CreateTile(float prefabIndex ) {
 		var tileGameObject = Instantiate(tilePrefabs[0], transform);
-		tileGameObject.transform.position = new Vector3(_tilePositionX, player.position.y - 10, 0);
+		tileGameObject.transform.position = new Vector3(_tilePositionX, player.position.y + prefabIndex, 0);
 		_tilePositionX += TileSize;
 		_tileList.Add(tileGameObject);
 	}
