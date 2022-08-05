@@ -26,6 +26,7 @@ namespace Hero {
 
 			// Face forward
 			transform.forward = new Vector3(_horizontalInput, 0, Mathf.Abs(_horizontalInput) - 1);
+
 			_isGrounded = Physics.CheckSphere(transform.position, 0.1f, groundLayerMask, QueryTriggerInteraction.Ignore);
 			if (_isGrounded && _velocity.y < 0) {
 				_velocity.y = 0;
